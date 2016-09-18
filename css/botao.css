@@ -1,0 +1,50 @@
+/*Seletor Lateral*/
+/*Botão*/
+.toggle-input{
+    display: none;
+}
+.toggle-input:checked + .toggle-control:after{
+    left: 22px;
+}
+.toggle-input:checked + .toggle-control{
+    transition:  .4s;
+    background-color: #4cd964;
+    border-color: #4cd964;
+}
+.toggle-control:after{
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2), 0 1px 1px rgba(0,0,0,.3);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.toggle-control{
+    transition:  .4s;
+    width: 44px;
+    height: 22px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 22px;
+}
+
+/*Caixa de seleção*/
+div.seletor{
+    width: 320px;
+    height: 44px;
+    background: #f7f7f7;
+}
+.seletor span{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    float: left !important;
+    margin: 9px 8px;
+}
+.seletor div{
+    float: right !important;
+    margin: 10px 8px;
+}
+/*Fim Seletor Lateral*/
