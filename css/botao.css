@@ -1,4 +1,12 @@
 /*Seletor Lateral*/
+
+/*Espaço iPhone*/
+
+#iphone{
+    width: 320px;
+    height: 568px;
+}
+
 /*Botão*/
 .toggle-input{
     display: none;
@@ -31,20 +39,49 @@
     border-radius: 22px;
 }
 
-/*Caixa de seleção*/
-div.seletor{
-    width: 320px;
+/*Marcações comuns*/
+
+.mark,
+.seletor{
+    width: 100%;
     height: 44px;
     background: #f7f7f7;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
+
+/*Caixa de seleção*/
+
 .seletor span{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 22px;
-    float: left !important;
+    float: left;
     margin: 9px 8px;
 }
 .seletor div{
-    float: right !important;
+    float: right;
     margin: 10px 8px;
 }
 /*Fim Seletor Lateral*/
+
+/*Marcador*/
+
+.mark-input{
+    display: none;
+}
+.texto{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin: 9px 8px;
+    float: left;
+}
+.icone{
+    color: #157dfb;
+    margin: 9px 22px 9px 8px;
+    float: right;
+    font-size: 22px;
+    opacity: .0;
+}
+.mark-input[type=checkbox]:checked ~ .icone {
+   opacity: 1;
+}
+/*Fim Marcador*/
